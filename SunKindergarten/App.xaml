@@ -38,6 +38,11 @@
             <Setter Property="Foreground" Value="#eccdb1"/>
             <Setter Property="FontSize" Value="25"/>
         </Style>
+        <Style x:Key="MenuTextTextBlock" TargetType="TextBlock" BasedOn="{StaticResource InformationsDataBaseTextBlock}">
+            <Setter Property="Foreground" Value="#ECCDB1"/>
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
         <!--#endregion-->
         <!--#region Button-->
         <Style TargetType="Button" x:Key="SpareButton">

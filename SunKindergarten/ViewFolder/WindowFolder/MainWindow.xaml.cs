@@ -29,5 +29,10 @@ namespace SunKindergarten.ViewFolder.WindowFolder
         {
             WindowState = WindowState.Minimized;
         }
+
+        private void ChildrenButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ChildrenPage());
+        }
     }
 }

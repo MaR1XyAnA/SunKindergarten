@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Controls;
+using System.Windows;
 
 namespace SunKindergarten.ViewFolder.PageFolder
 {
@@ -19,6 +20,8 @@ namespace SunKindergarten.ViewFolder.PageFolder
         {
             ChildrenTable childrenTable = (ChildrenTable)ListChildrenListBox.SelectedItem;
             InformationsFrame.Navigate(new InformationChildrenPage(childrenTable));
+            RRRInfoTextTextBlock.Visibility = Visibility.Collapsed;
+            InformationsFrame.Visibility = Visibility.Visible;
         }
     }
 }

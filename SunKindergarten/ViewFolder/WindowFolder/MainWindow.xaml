@@ -94,9 +94,10 @@
                                 Width="140"
                                 Content="ДЕТИ"
                                 Margin="0 0 10 0"
-                                FontSize="20"
                                 Style="{StaticResource ButtonMenu}"/>
                             <Button
+                                x:Name="ChildrenButton"
+                                Click="ChildrenButton_Click"
                                 Width="160"
                                 Content="ГРУППЫ"
                                 Margin="10 0 10 0"
@@ -129,11 +130,9 @@
                         </Polygon.Fill>
                     </Polygon>
                     <TextBlock
-                        Foreground="#ECCDB1"
+                        Style="{StaticResource MenuTextTextBlock}"
                         Text="МЕНЮ"
-                        FontSize="30"
                         VerticalAlignment="Bottom"
-                        HorizontalAlignment="Center"
                         Margin="0 0 0 10"/>
                 </Grid>
             </Grid>
