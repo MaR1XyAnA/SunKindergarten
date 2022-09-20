@@ -20,8 +20,8 @@
             <Setter Property="Width" Value="1200"/>
         </Style>
         <Style TargetType="Page" x:Key="DetailedInformationPage">
-            <Setter Property="Height" Value="668"/>
-            <Setter Property="Width" Value="720"/>
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="Width" Value="680"/>
         </Style>
         <!--#endregion-->
         <!--#region TextBlock-->

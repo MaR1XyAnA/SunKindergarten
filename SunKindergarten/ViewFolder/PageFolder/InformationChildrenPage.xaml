@@ -59,6 +59,14 @@
                     Text="{Binding GroupTables.NameGroup}"
                     Margin="7 0 0 0"/>
             </StackPanel>
+            <Button
+                Width="260"
+                Height="45"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Content="РЕДАКТИРОВАТЬ"
+                Margin="0 20 20 10"
+                Style="{StaticResource ButtonMenu}"/>
         </StackPanel>
     </Grid>
 </Page>
