@@ -1,0 +1,65 @@
+﻿<Page x:Class="SunKindergarten.ViewFolder.PageFolder.InformationChildrenPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SunKindergarten.ViewFolder.PageFolder"
+      mc:Ignorable="d" 
+      Style="{StaticResource DetailedInformationPage}">
+
+    <Grid>
+        <StackPanel Grid.Column="1">
+            <StackPanel Orientation="Horizontal" Margin="10 30 0 0">
+                <TextBlock
+                    Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                    Text="ПЕРСОНАЛЬНЫЙ НОМЕР:"
+                    Margin="0 0 0 0"/>
+                <TextBlock
+                    Style="{StaticResource InformationsTrueDataBaseTextBlock}"
+                    Text="{Binding PersonalNumberChildren}"
+                    Margin="7 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <TextBlock
+                    Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                    Text="ФАМИЛИЯ:"
+                    Margin="0 0 0 0"/>
+                <TextBlock
+                    Style="{StaticResource InformationsTrueDataBaseTextBlock}"
+                    Text="{Binding SurnamesChildren}"
+                    Margin="7 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <TextBlock
+                    Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                    Text="ИМЯ:"
+                    Margin="0 0 0 0"/>
+                <TextBlock
+                    Style="{StaticResource InformationsTrueDataBaseTextBlock}"
+                    Text="{Binding NameChildren}"
+                    Margin="7 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <TextBlock
+                    Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                    Text="ОТЧЕСТВО:"
+                    Margin="0 0 0 0"/>
+                <TextBlock
+                    Style="{StaticResource InformationsTrueDataBaseTextBlock}"
+                    Text="{Binding Middlename}"
+                    Margin="7 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <TextBlock
+                    Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                    Text="ГРУППА:"
+                    Margin="0 0 0 0"/>
+                <TextBlock
+                    Style="{StaticResource InformationsTrueDataBaseTextBlock}"
+                    Text="{Binding GroupTables.NameGroup}"
+                    Margin="7 0 0 0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
+    <!--Test-->
