@@ -16,8 +16,15 @@
                     Margin="0 0 0 0"/>
                 <TextBlock
                     Style="{StaticResource InformationsTrueDataBaseTextBlock}"
-                    Text="{Binding PersonalNumberChildren}"
-                    Margin="7 0 0 0"/>
+                    Text="{Binding ChildrenTable.PersonalNumberChildren}"
+                    Margin="7 0 0 0"
+                    Name="PersonalNumberChildrenTextBlock"/>
+                <TextBox
+                    Name="PersonalNumberChildrenTextBox"
+                    Visibility="Collapsed"
+                    Width="200"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
                 <TextBlock
@@ -26,18 +33,32 @@
                     Margin="0 0 0 0"/>
                 <TextBlock
                     Style="{StaticResource InformationsTrueDataBaseTextBlock}"
-                    Text="{Binding SurnamesChildren}"
-                    Margin="7 0 0 0"/>
+                    Text="{Binding ChildrenTable.SurnamesChildren}"
+                    Margin="7 0 0 0"
+                    Name="SurnamesChildrenTextBlock"/>
+                <TextBox
+                    Name="SurnamesChildrenTextBox"
+                    Visibility="Collapsed"
+                    Width="386"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
                 <TextBlock
                     Style="{StaticResource InformationsFalseDataBaseTextBlock}"
                     Text="ИМЯ:"
                     Margin="0 0 0 0"/>
+                <TextBox
+                    Name="NameChildrenTextBox"
+                    Visibility="Collapsed"
+                    Width="478"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
                 <TextBlock
                     Style="{StaticResource InformationsTrueDataBaseTextBlock}"
-                    Text="{Binding NameChildren}"
-                    Margin="7 0 0 0"/>
+                    Text="{Binding ChildrenTable.NameChildren}"
+                    Margin="7 0 0 0"
+                    Name="NameChildrenTextBlock"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
                 <TextBlock
@@ -46,8 +67,15 @@
                     Margin="0 0 0 0"/>
                 <TextBlock
                     Style="{StaticResource InformationsTrueDataBaseTextBlock}"
-                    Text="{Binding Middlename}"
-                    Margin="7 0 0 0"/>
+                    Text="{Binding ChildrenTable.MiddlenameChildren}"
+                    Margin="7 0 0 0"
+                    Name="MiddlenameChildrenTextBlock"/>
+                <TextBox
+                    Name="MiddlenameChildrenTextBox"
+                    Visibility="Collapsed"
+                    Width="389"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
                 <TextBlock
@@ -56,17 +84,111 @@
                     Margin="0 0 0 0"/>
                 <TextBlock
                     Style="{StaticResource InformationsTrueDataBaseTextBlock}"
-                    Text="{Binding GroupTables.NameGroup}"
-                    Margin="7 0 0 0"/>
+                    Text="{Binding ChildrenTable.GroupTables.NameGroup}"
+                    Margin="7 0 0 0"
+                    Name="GroupChildrenTextBlock"/>
+                <TextBox
+                    Name="GroupChildrenTextBox"
+                    Visibility="Collapsed"
+                    Width="424"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <TextBlock
+                    Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                    Text="НАЗВАНИЕ ГРУППЫ:"
+                    Margin="0 0 0 0"/>
+                <TextBlock
+                    Style="{StaticResource InformationsTrueDataBaseTextBlock}"
+                    Text="{Binding EventTables.NameEvent}"
+                    Margin="7 0 0 0"
+                    Name="EventChildrenTextBlock"/>
+                <TextBox
+                    Name="EventChildrenTextBox"
+                    Visibility="Collapsed"
+                    Width="424"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <TextBlock
+                    Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                    Text="НАПРАВЛЕНИЕ ГРУППЫ:"
+                    Margin="0 0 0 0"/>
+                <TextBlock
+                    Style="{StaticResource InformationsTrueDataBaseTextBlock}"
+                    Text="{Binding EventTables.FocusEvent}"
+                    Margin="7 0 0 0"
+                    Name="FocusEventChildrenTextBlock"/>
+                <TextBox
+                    Name="FocusEventChildrenTextBox"
+                    Visibility="Collapsed"
+                    Width="424"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <TextBlock
+                    Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                    Text="ДАТА ПОСЕЩЕНИЯ:"
+                    Margin="0 0 0 0"/>
+                <TextBlock
+                    Style="{StaticResource InformationsTrueDataBaseTextBlock}"
+                    Text="{Binding DataEventResult, StringFormat='{}{0:dd/MM/yyyy}'}"
+                    Margin="7 0 0 0"
+                    Name="DataEventChildrenTextBlock"/>
+                <TextBox
+                    Name="DataEventChildrenTextBox"
+                    Visibility="Collapsed"
+                    Width="424"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                <TextBlock
+                    Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                    Text="ОЦЕНКА:"
+                    Margin="0 0 0 0"/>
+                <TextBlock
+                    Style="{StaticResource InformationsTrueDataBaseTextBlock}"
+                    Text="{Binding EvaluationTables.NameEvaluation}"
+                    Margin="7 0 0 0"
+                    Name="EvaluationChildrenTextBlock"/>
+                <TextBox
+                    Name="EvaluationChildrenTextBox"
+                    Visibility="Collapsed"
+                    Width="424"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
             </StackPanel>
             <Button
                 Width="260"
                 Height="45"
+                x:Name="EditInformationsButton"
+                Click="EditInformationsButton_Click"
+                Visibility="Visible"
                 VerticalAlignment="Bottom"
                 HorizontalAlignment="Right"
                 Content="РЕДАКТИРОВАТЬ"
                 Margin="0 20 20 10"
                 Style="{StaticResource ButtonMenu}"/>
+            <StackPanel Visibility="Collapsed" x:Name="NextButtonStackPanel" Margin="0 20 20 10" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+            <Button
+                Margin="0 0 5 0"
+                Width="200"
+                Height="45"
+                Content="СОХРАНИТЬ"
+                Style="{StaticResource ButtonMenu}"/>
+            <Button
+                Name="CancelEditInformationsButton"
+                Click="CancelEditInformationsButton_Click"
+                Margin="5 0 0 0"
+                Width="160"
+                Height="45"
+                Content="ОТМЕНА"
+                Style="{StaticResource ButtonMenu}"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

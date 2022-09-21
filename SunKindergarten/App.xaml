@@ -44,6 +44,42 @@
             <Setter Property="HorizontalAlignment" Value="Center"/>
         </Style>
         <!--#endregion-->
+        <!--#region TextBox-->
+        <Style TargetType="TextBox" x:Key="MainStyleTextBox">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="Console"/>
+            <Setter Property="Padding" Value="10 0 0 0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Background" Value="#eccdb1"/>
+            <Setter Property="Foreground" Value="#271007"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border 
+                            x:Name="border"
+                            CornerRadius="15"
+                            BorderBrush="#393e46"
+                            BorderThickness="2"
+                            Background="#eccdb1"
+                            >
+                            <ScrollViewer 
+                            x:Name="PART_ContentHost"
+                            Focusable="false"
+                            HorizontalScrollBarVisibility="Hidden"
+                            VerticalScrollBarVisibility="Hidden"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#eccdb1"/>
+                                <Setter Property="BorderThickness" Value="2"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--#endregion-->
         <!--#region Button-->
         <Style TargetType="Button" x:Key="SpareButton">
             <Setter Property="Background" Value="Transparent"/>

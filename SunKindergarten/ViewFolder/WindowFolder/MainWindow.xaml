@@ -91,13 +91,15 @@
                         </Border.Background>
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                             <Button
+                                Name="ChildrenButton"
+                                Click="ChildrenButton_Click"
                                 Width="140"
                                 Content="ДЕТИ"
                                 Margin="0 0 10 0"
                                 Style="{StaticResource ButtonMenu}"/>
                             <Button
-                                x:Name="ChildrenButton"
-                                Click="ChildrenButton_Click"
+                                x:Name="GroupButton"
+                                Click="GroupButton_Click"
                                 Width="160"
                                 Content="ГРУППЫ"
                                 Margin="10 0 10 0"

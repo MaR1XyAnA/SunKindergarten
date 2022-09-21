@@ -1,4 +1,4 @@
-﻿<Page x:Class="SunKindergarten.ViewFolder.PageFolder.ChildrenPage"
+﻿<Page x:Class="SunKindergarten.ViewFolder.PageFolder.GrouPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -14,11 +14,11 @@
         </Grid.ColumnDefinitions>
         <Border Margin="20" CornerRadius="20" BorderBrush="#eccdb1" BorderThickness="1">
             <ListBox
-                x:Name="ListChildrenListBox"
+                x:Name="ListGroupListBox"
                 Background="Transparent"
                 BorderBrush="Transparent"
                 BorderThickness="0"
-                SelectionChanged ="ListChildrenListBox_SelectionChanged">
+                SelectionChanged ="ListGroupListBox_SelectionChanged">
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
                         <Style.Resources>
@@ -40,15 +40,7 @@
                                     <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10 0 0 0">
                                         <TextBlock
                                             Style="{StaticResource InformationsDataBaseTextBlock}"
-                                            Text="{Binding ChildrenTable.SurnamesChildren}"
-                                            Margin="5 0 0 0"/>
-                                        <TextBlock
-                                            Style="{StaticResource InformationsDataBaseTextBlock}"
-                                            Text="{Binding ChildrenTable.NameChildren}"
-                                            Margin="5 0 0 0"/>
-                                        <TextBlock
-                                            Style="{StaticResource InformationsDataBaseTextBlock}"
-                                            Text="{Binding ChildrenTable.MiddlenameChildren}"
+                                            Text="{Binding NameGroup}"
                                             Margin="5 0 0 0"/>
                                     </StackPanel>
                                 </Grid>
@@ -63,7 +55,7 @@
                 <Grid Height="Auto">
                     <TextBlock
                         Style="{StaticResource InformationsFalseDataBaseTextBlock}"
-                        Text="ВЫБЕРИТЕ РЕБЁНКА ДЛЯ ПРОСМОТРА ПОДРОБНОЙ ИНФОРМАЦИИ О НЁМ"
+                        Text="ВЫБЕРИТЕ ГРУППУ ДЛЯ ПРОСМОТРА ПОДРОБНОЙ ИНФОРМАЦИИ"
                         Margin="0 10 0 10"
                         TextWrapping="Wrap" 
                         TextAlignment="Center"
@@ -76,10 +68,12 @@
                 </Grid>
             </Border>
             <Button
+                x:Name="NewGroup"
+                Click="NewGroup_Click"
                 Width="300"
                 VerticalAlignment="Bottom"
                 HorizontalAlignment="Right"
-                Content="ДОБАВИТЬ РЕБЁНКА"
+                Content="ДОБАВИТЬ ГРУППУ"
                 Margin="0 0 20 20"
                 Style="{StaticResource ButtonMenu}"/>
         </Grid>

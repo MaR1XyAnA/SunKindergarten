@@ -101,8 +101,17 @@
     <Compile Include="ViewFolder\PageFolder\ChildrenPage.xaml.cs">
       <DependentUpon>ChildrenPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewFolder\PageFolder\GrouPage.xaml.cs">
+      <DependentUpon>GrouPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewFolder\PageFolder\InformationChildrenPage.xaml.cs">
       <DependentUpon>InformationChildrenPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFolder\PageFolder\InformationGroupPage.xaml.cs">
+      <DependentUpon>InformationGroupPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFolder\PageFolder\NewGroupPage.xaml.cs">
+      <DependentUpon>NewGroupPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewFolder\WindowFolder\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -115,7 +124,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ViewFolder\PageFolder\GrouPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewFolder\PageFolder\InformationChildrenPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewFolder\PageFolder\InformationGroupPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewFolder\PageFolder\NewGroupPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

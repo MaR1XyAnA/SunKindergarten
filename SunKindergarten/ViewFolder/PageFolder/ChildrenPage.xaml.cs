@@ -12,14 +12,15 @@ namespace SunKindergarten.ViewFolder.PageFolder
         {
             InitializeComponent();
             AppConnectModelClass.DataBase = new SunDataBaseEntities();
-            ListChildrenListBox.ItemsSource = AppConnectModelClass.DataBase.ChildrenTable.ToList();
-            ListChildrenListBox.Items.SortDescriptions.Add(new SortDescription("SurnamesChildren", ListSortDirection.Ascending));
+            ListChildrenListBox.ItemsSource = AppConnectModelClass.DataBase.ResultTable.ToList();
+            ListChildrenListBox.Items.SortDescriptions.Add
+                (new SortDescription("ChildrenTable.SurnamesChildren", ListSortDirection.Ascending));
         }
 
         private void ListChildrenListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ChildrenTable childrenTable = (ChildrenTable)ListChildrenListBox.SelectedItem;
-            InformationsFrame.Navigate(new InformationChildrenPage(childrenTable));
+            ResultTable resultTable = (ResultTable)ListChildrenListBox.SelectedItem;
+            InformationsFrame.Navigate(new InformationChildrenPage(resultTable));
             RRRInfoTextTextBlock.Visibility = Visibility.Collapsed;
             InformationsFrame.Visibility = Visibility.Visible;
         }

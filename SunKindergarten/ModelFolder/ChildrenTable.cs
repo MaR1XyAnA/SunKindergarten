@@ -23,7 +23,7 @@ namespace SunKindergarten.ModelFolder
         public int PersonalNumberChildren { get; set; }
         public string SurnamesChildren { get; set; }
         public string NameChildren { get; set; }
-        public string Middlename { get; set; }
+        public string MiddlenameChildren { get; set; }
         public int GroupChildren { get; set; }
     
         public virtual GroupTables GroupTables { get; set; }

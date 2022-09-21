@@ -1,35 +1,76 @@
 ﻿using SunKindergarten.ModelFolder;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace SunKindergarten.ViewFolder.PageFolder
 {
-    /// <summary>
-    /// Логика взаимодействия для InformationChildrenPage.xaml
-    /// </summary>
     public partial class InformationChildrenPage : Page
     {
-        ChildrenTable childrenTable = new ChildrenTable();
-        public InformationChildrenPage(ChildrenTable childrenTable)
+        ResultTable resultTable = new ResultTable();
+        public InformationChildrenPage(ResultTable resultTable)
         {
             InitializeComponent();
-            if (childrenTable != null)
+            if (resultTable != null)
             {
-                childrenTable = childrenTable;
-                DataContext = childrenTable;
+                resultTable = resultTable;
+                DataContext = resultTable;
             }
+        }
+
+        private void EditInformationsButton_Click(object sender, RoutedEventArgs e)
+        {
+            string
+                PersonalNumberChildren,
+                SurnamesChildren,
+                NameChildren,
+                MiddlenameChildren,
+                GroupChildren;
+
+            PersonalNumberChildren = Convert.ToString(PersonalNumberChildrenTextBlock.Text);
+            SurnamesChildren = Convert.ToString(SurnamesChildrenTextBlock.Text);
+            NameChildren = Convert.ToString(NameChildrenTextBlock.Text);
+            MiddlenameChildren = Convert.ToString(MiddlenameChildrenTextBlock.Text);
+            GroupChildren = Convert.ToString(GroupChildrenTextBlock.Text);
+
+            PersonalNumberChildrenTextBox.Text = PersonalNumberChildren;
+            SurnamesChildrenTextBox.Text = SurnamesChildren;
+            NameChildrenTextBox.Text = NameChildren;
+            MiddlenameChildrenTextBox.Text = MiddlenameChildren;
+            GroupChildrenTextBox.Text = GroupChildren;
+
+            NextButtonStackPanel.Visibility = Visibility.Visible;
+            EditInformationsButton.Visibility = Visibility.Collapsed;
+            
+            PersonalNumberChildrenTextBox.Visibility = Visibility.Visible;
+            SurnamesChildrenTextBox.Visibility = Visibility.Visible;
+            NameChildrenTextBox.Visibility = Visibility.Visible;
+            MiddlenameChildrenTextBox.Visibility = Visibility.Visible;
+            GroupChildrenTextBox.Visibility = Visibility.Visible;
+
+            PersonalNumberChildrenTextBlock.Visibility = Visibility.Collapsed;
+            SurnamesChildrenTextBlock.Visibility = Visibility.Collapsed;
+            NameChildrenTextBlock.Visibility = Visibility.Collapsed;
+            MiddlenameChildrenTextBlock.Visibility = Visibility.Collapsed;
+            GroupChildrenTextBlock.Visibility = Visibility.Collapsed;
+        }
+
+        private void CancelEditInformationsButton_Click(object sender, RoutedEventArgs e)
+        {
+            NextButtonStackPanel.Visibility = Visibility.Collapsed;
+            EditInformationsButton.Visibility = Visibility.Visible;
+
+            PersonalNumberChildrenTextBox.Visibility = Visibility.Collapsed;
+            SurnamesChildrenTextBox.Visibility = Visibility.Collapsed;
+            NameChildrenTextBox.Visibility = Visibility.Collapsed;
+            MiddlenameChildrenTextBox.Visibility = Visibility.Collapsed;
+            GroupChildrenTextBox.Visibility = Visibility.Collapsed;
+
+            PersonalNumberChildrenTextBlock.Visibility = Visibility.Visible;
+            SurnamesChildrenTextBlock.Visibility = Visibility.Visible;
+            NameChildrenTextBlock.Visibility = Visibility.Visible;
+            MiddlenameChildrenTextBlock.Visibility = Visibility.Visible;
+            GroupChildrenTextBlock.Visibility = Visibility.Visible;
         }
     }
 }
