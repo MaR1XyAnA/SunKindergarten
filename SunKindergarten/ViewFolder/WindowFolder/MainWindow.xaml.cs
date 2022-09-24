@@ -39,5 +39,10 @@ namespace SunKindergarten.ViewFolder.WindowFolder
         {
             MainFrame.Navigate(new GrouPage());
         }
+
+        private void EventButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new EventPage());
+        }
     }
 }

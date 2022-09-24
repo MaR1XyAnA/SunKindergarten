@@ -24,5 +24,12 @@ namespace SunKindergarten.ViewFolder.PageFolder
             RRRInfoTextTextBlock.Visibility = Visibility.Collapsed;
             InformationsFrame.Visibility = Visibility.Visible;
         }
+
+        private void NewChildrenNutton_Click(object sender, RoutedEventArgs e)
+        {
+            InformationsFrame.Navigate(new NewChildrenPage());
+            RRRInfoTextTextBlock.Visibility = Visibility.Collapsed;
+            InformationsFrame.Visibility = Visibility.Visible;
+        }
     }
 }

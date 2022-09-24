@@ -6,12 +6,13 @@
     <Application.Resources>
         <!--#region Windows-->
         <Style TargetType="Window" x:Key="WindowsStyle">
-            <Setter Property="Height" Value="700"/>
+            <Setter Property="Height" Value="900"/>
             <Setter Property="Width" Value="1200"/>
             <Setter Property="WindowStyle" Value="None"/>
             <Setter Property="ResizeMode" Value="NoResize"/>
             <Setter Property="AllowsTransparency" Value="True"/>
             <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Icon" Value="\ContentFolder\ImageFolder\SunIcons.jpg"/>
         </Style>
         <!--#endregion-->
         <!--#region Page-->
@@ -80,6 +81,35 @@
             </Setter>
         </Style>
         <!--#endregion-->
+        <!--#region TextBox-->
+        <Style TargetType="ComboBox" x:Key="MainStyleCombaBox">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontFamily" Value="Console"/>
+            <Setter Property="Padding" Value="10 0 0 0"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Background" Value="#eccdb1"/>
+            <Setter Property="Foreground" Value="#271007"/>
+            <!--<Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ComboBox}">
+                        <Border 
+                            x:Name="border"
+                            CornerRadius="1"
+                            BorderBrush="#393e46"
+                            BorderThickness="2"
+                            Background="#eccdb1"/>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="#eccdb1"/>
+                                <Setter Property="BorderThickness" Value="2"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>-->
+        </Style>
+        <!--#endregion-->
         <!--#region Button-->
         <Style TargetType="Button" x:Key="SpareButton">
             <Setter Property="Background" Value="Transparent"/>
@@ -129,6 +159,7 @@
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="BorderBrush" Value="#eccdb1"/>
+                                <Setter Property="FontSize" Value="22"/>
                                 <Setter Property="BorderThickness" Value="2"/>
                             </Trigger>
                         </ControlTemplate.Triggers>

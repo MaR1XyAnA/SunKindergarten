@@ -22,7 +22,7 @@
                 <TextBox
                     Name="PersonalNumberChildrenTextBox"
                     Visibility="Collapsed"
-                    Width="200"
+                    Width="300"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
             </StackPanel>
@@ -39,7 +39,7 @@
                 <TextBox
                     Name="SurnamesChildrenTextBox"
                     Visibility="Collapsed"
-                    Width="386"
+                    Width="486"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
             </StackPanel>
@@ -51,7 +51,7 @@
                 <TextBox
                     Name="NameChildrenTextBox"
                     Visibility="Collapsed"
-                    Width="478"
+                    Width="570"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
                 <TextBlock
@@ -73,7 +73,7 @@
                 <TextBox
                     Name="MiddlenameChildrenTextBox"
                     Visibility="Collapsed"
-                    Width="389"
+                    Width="489"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
             </StackPanel>
@@ -87,12 +87,14 @@
                     Text="{Binding ChildrenTable.GroupTables.NameGroup}"
                     Margin="7 0 0 0"
                     Name="GroupChildrenTextBlock"/>
-                <TextBox
-                    Name="GroupChildrenTextBox"
+                <ComboBox
+                    Name="GroupChildrenCombaBox"
                     Visibility="Collapsed"
-                    Width="424"
-                    Style="{StaticResource MainStyleTextBox}"
-                    Margin="5 0 0 0"/>
+                    Style="{StaticResource MainStyleCombaBox}"
+                    Width="523"
+                    DisplayMemberPath="NameGroup"
+                    Margin="5 0 0 0" 
+                    BorderBrush="Transparent"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
                 <TextBlock
@@ -104,12 +106,14 @@
                     Text="{Binding EventTables.NameEvent}"
                     Margin="7 0 0 0"
                     Name="EventChildrenTextBlock"/>
-                <TextBox
-                    Name="EventChildrenTextBox"
+                <ComboBox
+                    Name="EventChildrenCombaBox"
                     Visibility="Collapsed"
-                    Width="424"
-                    Style="{StaticResource MainStyleTextBox}"
-                    Margin="5 0 0 0"/>
+                    Style="{StaticResource MainStyleCombaBox}"
+                    Width="364"
+                    DisplayMemberPath="NameEvent"
+                    Margin="5 0 0 0" 
+                    BorderBrush="Transparent"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
                 <TextBlock
@@ -121,12 +125,14 @@
                     Text="{Binding EventTables.FocusEvent}"
                     Margin="7 0 0 0"
                     Name="FocusEventChildrenTextBlock"/>
-                <TextBox
-                    Name="FocusEventChildrenTextBox"
+                <ComboBox
+                    Name="FocusEventChildrenCombaBox"
                     Visibility="Collapsed"
-                    Width="424"
-                    Style="{StaticResource MainStyleTextBox}"
-                    Margin="5 0 0 0"/>
+                    Style="{StaticResource MainStyleCombaBox}"
+                    Width="309"
+                    DisplayMemberPath="FocusEvent"
+                    Margin="5 0 0 0" 
+                    BorderBrush="Transparent"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
                 <TextBlock
@@ -138,10 +144,10 @@
                     Text="{Binding DataEventResult, StringFormat='{}{0:dd/MM/yyyy}'}"
                     Margin="7 0 0 0"
                     Name="DataEventChildrenTextBlock"/>
-                <TextBox
-                    Name="DataEventChildrenTextBox"
+                <DatePickerTextBox
+                    Name="DataEventChildrenDatePickerTextBox"
                     Visibility="Collapsed"
-                    Width="424"
+                    Width="380"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
             </StackPanel>
@@ -155,12 +161,14 @@
                     Text="{Binding EvaluationTables.NameEvaluation}"
                     Margin="7 0 0 0"
                     Name="EvaluationChildrenTextBlock"/>
-                <TextBox
-                    Name="EvaluationChildrenTextBox"
+                <ComboBox
+                    Name="EvaluationChildrenCombaBox"
                     Visibility="Collapsed"
-                    Width="424"
-                    Style="{StaticResource MainStyleTextBox}"
-                    Margin="5 0 0 0"/>
+                    Style="{StaticResource MainStyleCombaBox}"
+                    Width="527"
+                    DisplayMemberPath="NameEvaluation"
+                    Margin="5 0 0 0" 
+                    BorderBrush="Transparent"/>
             </StackPanel>
             <Button
                 Width="260"

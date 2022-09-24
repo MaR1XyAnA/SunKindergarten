@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SunKindergarten.ViewFolder.WindowFolder"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Style="{StaticResource WindowsStyle}">
     <Border CornerRadius="20">
         <Border.Background>
@@ -16,10 +17,16 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="32"/>
+                <RowDefinition Height="200"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+            <Image
+                Grid.Row="1"
+                Height="200"
+                Source="\ContentFolder\ImageFolder\logotip.png" 
+                Stretch="Uniform"/>
             <Frame
-               Grid.Row="1"
+               Grid.Row="2"
                x:Name="MainFrame"
                NavigationUIVisibility="Hidden"/>
             <Grid Background="Transparent" x:Name="SpaseBarGrid" MouseDown="SpaseBarGrid_MouseDown">
@@ -105,6 +112,8 @@
                                 Margin="10 0 10 0"
                                 Style="{StaticResource ButtonMenu}"/>
                             <Button
+                                x:Name="EventButton"
+                                Click="EventButton_Click"
                                 Width="220"
                                 Content="МЕРОПРИЯТИЯ"
                                 Margin="10 0 10 0"

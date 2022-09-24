@@ -101,6 +101,9 @@
     <Compile Include="ViewFolder\PageFolder\ChildrenPage.xaml.cs">
       <DependentUpon>ChildrenPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewFolder\PageFolder\EventPage.xaml.cs">
+      <DependentUpon>EventPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewFolder\PageFolder\GrouPage.xaml.cs">
       <DependentUpon>GrouPage.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,12 @@
     </Compile>
     <Compile Include="ViewFolder\PageFolder\InformationGroupPage.xaml.cs">
       <DependentUpon>InformationGroupPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFolder\PageFolder\InformationsEventPage.xaml.cs">
+      <DependentUpon>InformationsEventPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewFolder\PageFolder\NewChildrenPage.xaml.cs">
+      <DependentUpon>NewChildrenPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewFolder\PageFolder\NewGroupPage.xaml.cs">
       <DependentUpon>NewGroupPage.xaml</DependentUpon>
@@ -124,6 +133,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ViewFolder\PageFolder\EventPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewFolder\PageFolder\GrouPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -133,6 +146,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewFolder\PageFolder\InformationGroupPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewFolder\PageFolder\InformationsEventPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewFolder\PageFolder\NewChildrenPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -184,6 +205,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="ContentFolder\ImageFolder\NoImage.png" />
+    <Resource Include="ContentFolder\ImageFolder\logotip.png" />
+    <Resource Include="ContentFolder\ImageFolder\SunIcons.jpg" />
     <Content Include="ModelFolder\SunModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SunModel.edmx</DependentUpon>

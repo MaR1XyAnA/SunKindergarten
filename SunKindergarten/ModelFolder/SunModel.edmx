@@ -24,9 +24,9 @@
         </EntityType>
         <EntityType Name="EventTables">
           <Key>
-            <PropertyRef Name="PersonalNumber" />
+            <PropertyRef Name="PersonalNumberEvent" />
           </Key>
-          <Property Name="PersonalNumber" Type="int" Nullable="false" />
+          <Property Name="PersonalNumberEvent" Type="int" Nullable="false" />
           <Property Name="NameEvent" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="FocusEvent" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
@@ -98,7 +98,7 @@
           <End Role="ResultTable" Type="Self.ResultTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="EventTables">
-              <PropertyRef Name="PersonalNumber" />
+              <PropertyRef Name="PersonalNumberEvent" />
             </Principal>
             <Dependent Role="ResultTable">
               <PropertyRef Name="PersonalNumberEventResult" />
@@ -179,9 +179,9 @@
         </EntityType>
         <EntityType Name="EventTables">
           <Key>
-            <PropertyRef Name="PersonalNumber" />
+            <PropertyRef Name="PersonalNumberEvent" />
           </Key>
-          <Property Name="PersonalNumber" Type="Int32" Nullable="false" />
+          <Property Name="PersonalNumberEvent" Type="Int32" Nullable="false" />
           <Property Name="NameEvent" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="FocusEvent" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ResultTable" Relationship="SunDattaBaseModel.FK_ResultTable_EventTables" FromRole="EventTables" ToRole="ResultTable" />
@@ -258,7 +258,7 @@
           <End Type="SunDattaBaseModel.ResultTable" Role="ResultTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="EventTables">
-              <PropertyRef Name="PersonalNumber" />
+              <PropertyRef Name="PersonalNumberEvent" />
             </Principal>
             <Dependent Role="ResultTable">
               <PropertyRef Name="PersonalNumberEventResult" />
@@ -295,7 +295,7 @@
               <MappingFragment StoreEntitySet="EventTables">
                 <ScalarProperty Name="FocusEvent" ColumnName="FocusEvent" />
                 <ScalarProperty Name="NameEvent" ColumnName="NameEvent" />
-                <ScalarProperty Name="PersonalNumber" ColumnName="PersonalNumber" />
+                <ScalarProperty Name="PersonalNumberEvent" ColumnName="PersonalNumberEvent" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -20,7 +20,7 @@ namespace SunKindergarten.ModelFolder
             this.ResultTable = new HashSet<ResultTable>();
         }
     
-        public int PersonalNumber { get; set; }
+        public int PersonalNumberEvent { get; set; }
         public string NameEvent { get; set; }
         public string FocusEvent { get; set; }
     

@@ -1,0 +1,99 @@
+﻿<Page x:Class="SunKindergarten.ViewFolder.PageFolder.NewChildrenPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SunKindergarten.ViewFolder.PageFolder"
+      mc:Ignorable="d" 
+      Style="{StaticResource DetailedInformationPage}">
+
+    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="5">
+        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+            <TextBlock
+                Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                Text="ФАМИЛИЯ:"
+                Margin="0 0 0 0"/>
+            <TextBox
+                Name="NewSurnamesChildrenTextBox"
+                Visibility="Visible"
+                Width="500"
+                Style="{StaticResource MainStyleTextBox}"
+                Margin="5 0 0 0"/>
+        </StackPanel>
+        <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
+            <TextBlock
+                Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                Text="ИМЯ:"
+                Margin="0 0 0 0"/>
+            <TextBox
+                Name="NewNamesChildrenTextBox"
+                Visibility="Visible"
+                Width="584"
+                Style="{StaticResource MainStyleTextBox}"
+                Margin="5 0 0 0"/>
+        </StackPanel>
+        <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
+            <TextBlock
+                Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                Text="ОТЧЕСТВО:"
+                Margin="0 0 0 0"/>
+            <TextBox
+                Name="NewMiddlenamesChildrenTextBox"
+                Visibility="Visible"
+                Width="502"
+                Style="{StaticResource MainStyleTextBox}"
+                Margin="5 0 0 0"/>
+        </StackPanel>
+        <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
+            <TextBlock
+                Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                Text="ГРУППА:"
+                Margin="0 0 0 0"/>
+            <ComboBox
+                Name="NameGroupCombaBox"
+                Visibility="Visible"
+                Style="{StaticResource MainStyleCombaBox}"
+                Width="537"
+                DisplayMemberPath="NameGroup"
+                Margin="5 0 0 0" 
+                BorderBrush="Transparent"/>
+        </StackPanel>
+        <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
+            <TextBlock
+                Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                Text="НАЗВАНИЕ МЕРОПРИЯТИЯ:"
+                Margin="0 0 0 0"/>
+            <ComboBox
+                Name="NameEventCombaBox"
+                Visibility="Visible"
+                Style="{StaticResource MainStyleCombaBox}"
+                Width="285"
+                DisplayMemberPath="NameEvent"
+                Margin="5 0 0 0" 
+                BorderBrush="Transparent"/>
+        </StackPanel>
+        <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
+            <TextBlock
+                Style="{StaticResource InformationsFalseDataBaseTextBlock}"
+                Text="ДАТА ПОСТУПЛЕНИЯ:"
+                Margin="0 0 0 0"/>
+            <TextBox
+                Name="NewDataEventChildrenTextBox"
+                Visibility="Visible"
+                Width="359"
+                Style="{StaticResource MainStyleTextBox}"
+                Margin="5 0 0 0"/>
+        </StackPanel>
+        <Button
+                Width="260"
+                Height="45"
+                x:Name="NewChildrenButton"
+                Click="NewChildrenButton_Click"
+                Visibility="Visible"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Content="ДОБАВИТЬ"
+                Margin="0 20 20 10"
+                Style="{StaticResource ButtonMenu}"/>
+    </StackPanel>
+</Page>
