@@ -5,11 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="eca4f59157ee4119a76ef5bed60412df" Name="Diagram1">
-        <EntityTypeShape EntityType="SunDattaBaseModel.ChildrenTable" Width="5.625" PointX="3" PointY="1" />
-        <EntityTypeShape EntityType="SunDattaBaseModel.EvaluationTables" Width="1.5" PointX="3" PointY="4.625" />
-        <EntityTypeShape EntityType="SunDattaBaseModel.EventTables" Width="1.5" PointX="3" PointY="6.875" />
-        <EntityTypeShape EntityType="SunDattaBaseModel.GroupTables" Width="1.5" PointX="0.75" PointY="1.375" />
-        <EntityTypeShape EntityType="SunDattaBaseModel.ResultTable" Width="4.5" PointX="9.75" PointY="0.875" />
+        <EntityTypeShape EntityType="SunDattaBaseModel.ChildrenTable" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="SunDattaBaseModel.EvaluationTables" Width="1.5" PointX="3" PointY="6.875" />
+        <EntityTypeShape EntityType="SunDattaBaseModel.EventTables" Width="1.5" PointX="3" PointY="4.625" />
+        <EntityTypeShape EntityType="SunDattaBaseModel.GroupTables" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="SunDattaBaseModel.ResultTable" Width="1.5" PointX="5.25" PointY="1" />
         <EntityTypeShape EntityType="SunDattaBaseModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" />
         <AssociationConnector Association="SunDattaBaseModel.FK_ChildrenTable_GroupTables" />
         <AssociationConnector Association="SunDattaBaseModel.FK_ResultTable_ChildrenTable" />

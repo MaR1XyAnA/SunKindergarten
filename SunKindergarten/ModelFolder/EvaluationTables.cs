@@ -20,7 +20,6 @@ namespace SunKindergarten.ModelFolder
             this.ResultTable = new HashSet<ResultTable>();
         }
     
-        public int IdEvaluation { get; set; }
         public string NameEvaluation { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

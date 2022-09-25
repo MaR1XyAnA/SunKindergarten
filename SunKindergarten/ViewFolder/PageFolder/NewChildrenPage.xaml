@@ -118,29 +118,6 @@
                 </Border>
             </StackPanel>
         </StackPanel>
-        <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
-            <TextBlock
-                Style="{StaticResource InformationsFalseDataBaseTextBlock}"
-                Text="ДАТА ПОСТУПЛЕНИЯ:"
-                Margin="0 0 0 0"/>
-            <StackPanel>
-                <TextBox
-                    Name="NewDataEventChildrenTextBox"
-                    Visibility="Visible"
-                    Width="359"
-                    MaxLength="10"
-                    Style="{StaticResource MainStyleTextBox}"
-                    Margin="5 0 0 0"/>
-                <Border
-                    Style="{StaticResource ErrorBorder}"
-                    x:Name="NewDataEventBorder"
-                    Width="300">
-                    <TextBlock
-                        Style="{StaticResource ErrorInfoTextBlock}"
-                        Name="NewDataEventTextBlock"/>
-                </Border>
-            </StackPanel>
-        </StackPanel>
         <Button
                 Width="260"
                 Height="45"

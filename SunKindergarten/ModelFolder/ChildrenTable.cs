@@ -24,7 +24,7 @@ namespace SunKindergarten.ModelFolder
         public string SurnamesChildren { get; set; }
         public string NameChildren { get; set; }
         public string MiddlenameChildren { get; set; }
-        public int GroupChildren { get; set; }
+        public string GroupChildren { get; set; }
     
         public virtual GroupTables GroupTables { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

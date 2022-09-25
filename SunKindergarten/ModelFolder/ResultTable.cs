@@ -16,9 +16,9 @@ namespace SunKindergarten.ModelFolder
     {
         public int PersonalNumberResult { get; set; }
         public int PersonalNumberChildrenResult { get; set; }
-        public int PersonalNumberEventResult { get; set; }
+        public string PersonalNameEvent { get; set; }
         public System.DateTime DataEventResult { get; set; }
-        public int EvaluationResult { get; set; }
+        public string PersonalNameEvaluation { get; set; }
     
         public virtual ChildrenTable ChildrenTable { get; set; }
         public virtual EvaluationTables EvaluationTables { get; set; }
