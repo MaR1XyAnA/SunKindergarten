@@ -22,7 +22,7 @@
                 <TextBox
                     Name="PersonalNumberChildrenTextBox"
                     Visibility="Collapsed"
-                    Width="300"
+                    Width="304.36"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
             </StackPanel>
@@ -39,7 +39,7 @@
                 <TextBox
                     Name="SurnamesChildrenTextBox"
                     Visibility="Collapsed"
-                    Width="486"
+                    Width="490.64"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
             </StackPanel>
@@ -51,7 +51,7 @@
                 <TextBox
                     Name="NameChildrenTextBox"
                     Visibility="Collapsed"
-                    Width="570"
+                    Width="574.86"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
                 <TextBlock
@@ -73,7 +73,7 @@
                 <TextBox
                     Name="MiddlenameChildrenTextBox"
                     Visibility="Collapsed"
-                    Width="489"
+                    Width="492.45"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
             </StackPanel>
@@ -91,7 +91,7 @@
                     Name="GroupChildrenCombaBox"
                     Visibility="Collapsed"
                     Style="{StaticResource MainStyleCombaBox}"
-                    Width="523"
+                    Width="527.32"
                     DisplayMemberPath="NameGroup"
                     Margin="5 0 0 0" 
                     BorderBrush="Transparent"/>
@@ -110,7 +110,7 @@
                     Name="EventChildrenCombaBox"
                     Visibility="Collapsed"
                     Style="{StaticResource MainStyleCombaBox}"
-                    Width="364"
+                    Width="365.839"
                     DisplayMemberPath="NameEvent"
                     Margin="5 0 0 0" 
                     BorderBrush="Transparent"/>
@@ -129,7 +129,7 @@
                     Name="FocusEventChildrenCombaBox"
                     Visibility="Collapsed"
                     Style="{StaticResource MainStyleCombaBox}"
-                    Width="309"
+                    Width="309.81"
                     DisplayMemberPath="FocusEvent"
                     Margin="5 0 0 0" 
                     BorderBrush="Transparent"/>
@@ -147,7 +147,7 @@
                 <DatePickerTextBox
                     Name="DataEventChildrenDatePickerTextBox"
                     Visibility="Collapsed"
-                    Width="380"
+                    Width="380.549"
                     Style="{StaticResource MainStyleTextBox}"
                     Margin="5 0 0 0"/>
             </StackPanel>
@@ -165,7 +165,7 @@
                     Name="EvaluationChildrenCombaBox"
                     Visibility="Collapsed"
                     Style="{StaticResource MainStyleCombaBox}"
-                    Width="527"
+                    Width="522.23"
                     DisplayMemberPath="NameEvaluation"
                     Margin="5 0 0 0" 
                     BorderBrush="Transparent"/>

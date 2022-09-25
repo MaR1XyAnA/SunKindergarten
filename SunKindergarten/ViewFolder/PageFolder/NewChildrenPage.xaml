@@ -13,76 +13,133 @@
                 Style="{StaticResource InformationsFalseDataBaseTextBlock}"
                 Text="ФАМИЛИЯ:"
                 Margin="0 0 0 0"/>
-            <TextBox
-                Name="NewSurnamesChildrenTextBox"
-                Visibility="Visible"
-                Width="500"
-                Style="{StaticResource MainStyleTextBox}"
-                Margin="5 0 0 0"/>
+            <StackPanel>
+                <TextBox
+                    Name="NewSurnamesChildrenTextBox"
+                    Visibility="Visible"
+                    Width="500"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
+                <Border
+                    Style="{StaticResource ErrorBorder}"
+                    x:Name="NewSurnamesChildrenBorder">
+                    <TextBlock
+                        Style="{StaticResource ErrorInfoTextBlock}"
+                        Name="NewSurnamesChildrenTextBlock"/>
+                </Border>
+            </StackPanel>
         </StackPanel>
         <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
             <TextBlock
                 Style="{StaticResource InformationsFalseDataBaseTextBlock}"
                 Text="ИМЯ:"
                 Margin="0 0 0 0"/>
-            <TextBox
-                Name="NewNamesChildrenTextBox"
-                Visibility="Visible"
-                Width="584"
-                Style="{StaticResource MainStyleTextBox}"
-                Margin="5 0 0 0"/>
+            <StackPanel>
+                <TextBox
+                    Name="NewNamesChildrenTextBox"
+                    Visibility="Visible"
+                    Width="584"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
+                <Border
+                    Style="{StaticResource ErrorBorder}"
+                    x:Name="NewNamesChildrenBorder">
+                    <TextBlock
+                        Style="{StaticResource ErrorInfoTextBlock}"
+                        Name="NewNamesChildrenTextBlock"/>
+                </Border>
+            </StackPanel>
         </StackPanel>
         <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
             <TextBlock
                 Style="{StaticResource InformationsFalseDataBaseTextBlock}"
                 Text="ОТЧЕСТВО:"
                 Margin="0 0 0 0"/>
-            <TextBox
-                Name="NewMiddlenamesChildrenTextBox"
-                Visibility="Visible"
-                Width="502"
-                Style="{StaticResource MainStyleTextBox}"
-                Margin="5 0 0 0"/>
+            <StackPanel>
+                <TextBox
+                    Name="NewMiddlenamesChildrenTextBox"
+                    Visibility="Visible"
+                    Width="502"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
+                <Border
+                    Style="{StaticResource ErrorBorder}"
+                    x:Name="NewMiddlenamesChildrenBorder">
+                    <TextBlock
+                        Style="{StaticResource ErrorInfoTextBlock}"
+                        Name="NewMiddlenamesChildrenTextBlock"/>
+                </Border>
+            </StackPanel>
         </StackPanel>
         <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
             <TextBlock
                 Style="{StaticResource InformationsFalseDataBaseTextBlock}"
                 Text="ГРУППА:"
                 Margin="0 0 0 0"/>
-            <ComboBox
-                Name="NameGroupCombaBox"
-                Visibility="Visible"
-                Style="{StaticResource MainStyleCombaBox}"
-                Width="537"
-                DisplayMemberPath="NameGroup"
-                Margin="5 0 0 0" 
-                BorderBrush="Transparent"/>
+            <StackPanel>
+                <ComboBox
+                    Name="NameGroupCombaBox"
+                    Visibility="Visible"
+                    Style="{StaticResource MainStyleCombaBox}"
+                    Width="537"
+                    DisplayMemberPath="NameGroup"
+                    Margin="5 0 0 0" 
+                    BorderBrush="Transparent"/>
+                <Border
+                    Style="{StaticResource ErrorBorder}"
+                    x:Name="NewNameGroupBorder">
+                    <TextBlock
+                        Style="{StaticResource ErrorInfoTextBlock}"
+                        Name="NewNameGroupTextBlock"/>
+                </Border>
+            </StackPanel>
         </StackPanel>
         <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
             <TextBlock
                 Style="{StaticResource InformationsFalseDataBaseTextBlock}"
                 Text="НАЗВАНИЕ МЕРОПРИЯТИЯ:"
                 Margin="0 0 0 0"/>
-            <ComboBox
-                Name="NameEventCombaBox"
-                Visibility="Visible"
-                Style="{StaticResource MainStyleCombaBox}"
-                Width="285"
-                DisplayMemberPath="NameEvent"
-                Margin="5 0 0 0" 
-                BorderBrush="Transparent"/>
+            <StackPanel>
+                <ComboBox
+                    Name="NameEventCombaBox"
+                    Visibility="Visible"
+                    Style="{StaticResource MainStyleCombaBox}"
+                    Width="285"
+                    DisplayMemberPath="NameEvent"
+                    Margin="5 0 0 0" 
+                    BorderBrush="Transparent"/>
+                <Border
+                    Style="{StaticResource ErrorBorder}"
+                    Width="200"
+                    x:Name="NewNameEventBorder">
+                    <TextBlock
+                        Style="{StaticResource ErrorInfoTextBlock}"
+                        Name="NewNameEventTextBlock"/>
+                </Border>
+            </StackPanel>
         </StackPanel>
         <StackPanel Margin="10 10 0 0" Orientation="Horizontal">
             <TextBlock
                 Style="{StaticResource InformationsFalseDataBaseTextBlock}"
                 Text="ДАТА ПОСТУПЛЕНИЯ:"
                 Margin="0 0 0 0"/>
-            <TextBox
-                Name="NewDataEventChildrenTextBox"
-                Visibility="Visible"
-                Width="359"
-                Style="{StaticResource MainStyleTextBox}"
-                Margin="5 0 0 0"/>
+            <StackPanel>
+                <TextBox
+                    Name="NewDataEventChildrenTextBox"
+                    Visibility="Visible"
+                    Width="359"
+                    MaxLength="10"
+                    Style="{StaticResource MainStyleTextBox}"
+                    Margin="5 0 0 0"/>
+                <Border
+                    Style="{StaticResource ErrorBorder}"
+                    x:Name="NewDataEventBorder"
+                    Width="300">
+                    <TextBlock
+                        Style="{StaticResource ErrorInfoTextBlock}"
+                        Name="NewDataEventTextBlock"/>
+                </Border>
+            </StackPanel>
         </StackPanel>
         <Button
                 Width="260"

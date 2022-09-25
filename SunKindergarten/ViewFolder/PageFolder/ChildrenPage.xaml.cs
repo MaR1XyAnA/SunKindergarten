@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Windows.Controls;
 using System.Windows;
+using System.Media;
 
 namespace SunKindergarten.ViewFolder.PageFolder
 {
@@ -23,6 +24,10 @@ namespace SunKindergarten.ViewFolder.PageFolder
             InformationsFrame.Navigate(new InformationChildrenPage(resultTable));
             RRRInfoTextTextBlock.Visibility = Visibility.Collapsed;
             InformationsFrame.Visibility = Visibility.Visible;
+            //SoundPlayer sp = new SoundPlayer();
+            //sp.SoundLocation = @"\ContentFolder\SoundFolder\discord.wav";
+            //sp.Load();
+            //sp.PlayLooping();
         }
 
         private void NewChildrenNutton_Click(object sender, RoutedEventArgs e)

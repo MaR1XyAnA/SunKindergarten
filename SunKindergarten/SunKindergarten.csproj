@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassFolder\RegistrationСhildrenClass.cs" />
     <Compile Include="ModelFolder\AppConnectModelClass.cs" />
     <Compile Include="ModelFolder\ChildrenTable.cs">
       <DependentUpon>SunModel.tt</DependentUpon>
@@ -181,7 +182,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EntityDeploy Include="ModelFolder\SunModel.edmx">
@@ -208,6 +209,9 @@
     <Resource Include="ContentFolder\ImageFolder\NoImage.png" />
     <Resource Include="ContentFolder\ImageFolder\logotip.png" />
     <Resource Include="ContentFolder\ImageFolder\SunIcons.jpg" />
+    <SplashScreen Include="ContentFolder\ImageFolder\solnyishko.png" />
+    <Content Include="ContentFolder\SoundFolder\discord-leave.mp3" />
+    <Resource Include="ContentFolder\SoundFolder\discord.wav" />
     <Content Include="ModelFolder\SunModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SunModel.edmx</DependentUpon>
