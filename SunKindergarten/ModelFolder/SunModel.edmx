@@ -7,9 +7,9 @@
     <Schema Namespace="Хранилище SunDattaBaseModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="ChildrenTable">
           <Key>
-            <PropertyRef Name="PersonalNumberChildren" />
+            <PropertyRef Name="SurnamesChildren" />
+            <PropertyRef Name="NameChildren" />
           </Key>
-          <Property Name="PersonalNumberChildren" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SurnamesChildren" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="NameChildren" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="MiddlenameChildren" Type="nvarchar" MaxLength="50" />
@@ -38,11 +38,12 @@
           <Key>
             <PropertyRef Name="PersonalNumberResult" />
           </Key>
-          <Property Name="PersonalNumberResult" Type="int" Nullable="false" />
-          <Property Name="PersonalNumberChildrenResult" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PersonalNumberResult" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="PersonalNameEvent" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="DataEventResult" Type="date" Nullable="false" />
           <Property Name="PersonalNameEvaluation" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SurnamesChildrenResult" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NameChildrenResult" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -71,10 +72,12 @@
           <End Role="ResultTable" Type="Self.ResultTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ChildrenTable">
-              <PropertyRef Name="PersonalNumberChildren" />
+              <PropertyRef Name="SurnamesChildren" />
+              <PropertyRef Name="NameChildren" />
             </Principal>
             <Dependent Role="ResultTable">
-              <PropertyRef Name="PersonalNumberChildrenResult" />
+              <PropertyRef Name="SurnamesChildrenResult" />
+              <PropertyRef Name="NameChildrenResult" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -156,9 +159,9 @@
         </EntityContainer>
         <EntityType Name="ChildrenTable">
           <Key>
-            <PropertyRef Name="PersonalNumberChildren" />
+            <PropertyRef Name="SurnamesChildren" />
+            <PropertyRef Name="NameChildren" />
           </Key>
-          <Property Name="PersonalNumberChildren" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SurnamesChildren" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="NameChildren" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="MiddlenameChildren" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -192,11 +195,12 @@
           <Key>
             <PropertyRef Name="PersonalNumberResult" />
           </Key>
-          <Property Name="PersonalNumberResult" Type="Int32" Nullable="false" />
-          <Property Name="PersonalNumberChildrenResult" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PersonalNumberResult" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="PersonalNameEvent" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DataEventResult" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="PersonalNameEvaluation" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SurnamesChildrenResult" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NameChildrenResult" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="ChildrenTable" Relationship="SunDattaBaseModel.FK_ResultTable_ChildrenTable" FromRole="ResultTable" ToRole="ChildrenTable" />
           <NavigationProperty Name="EvaluationTables" Relationship="SunDattaBaseModel.FK_ResultTable_EvaluationTables" FromRole="ResultTable" ToRole="EvaluationTables" />
           <NavigationProperty Name="EventTables" Relationship="SunDattaBaseModel.FK_ResultTable_EventTables" FromRole="ResultTable" ToRole="EventTables" />
@@ -228,10 +232,12 @@
           <End Type="SunDattaBaseModel.ResultTable" Role="ResultTable" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ChildrenTable">
-              <PropertyRef Name="PersonalNumberChildren" />
+              <PropertyRef Name="SurnamesChildren" />
+              <PropertyRef Name="NameChildren" />
             </Principal>
             <Dependent Role="ResultTable">
-              <PropertyRef Name="PersonalNumberChildrenResult" />
+              <PropertyRef Name="SurnamesChildrenResult" />
+              <PropertyRef Name="NameChildrenResult" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -272,7 +278,6 @@
                 <ScalarProperty Name="MiddlenameChildren" ColumnName="MiddlenameChildren" />
                 <ScalarProperty Name="NameChildren" ColumnName="NameChildren" />
                 <ScalarProperty Name="SurnamesChildren" ColumnName="SurnamesChildren" />
-                <ScalarProperty Name="PersonalNumberChildren" ColumnName="PersonalNumberChildren" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -301,10 +306,11 @@
           <EntitySetMapping Name="ResultTable">
             <EntityTypeMapping TypeName="SunDattaBaseModel.ResultTable">
               <MappingFragment StoreEntitySet="ResultTable">
+                <ScalarProperty Name="NameChildrenResult" ColumnName="NameChildrenResult" />
+                <ScalarProperty Name="SurnamesChildrenResult" ColumnName="SurnamesChildrenResult" />
                 <ScalarProperty Name="PersonalNameEvaluation" ColumnName="PersonalNameEvaluation" />
                 <ScalarProperty Name="DataEventResult" ColumnName="DataEventResult" />
                 <ScalarProperty Name="PersonalNameEvent" ColumnName="PersonalNameEvent" />
-                <ScalarProperty Name="PersonalNumberChildrenResult" ColumnName="PersonalNumberChildrenResult" />
                 <ScalarProperty Name="PersonalNumberResult" ColumnName="PersonalNumberResult" />
               </MappingFragment>
             </EntityTypeMapping>

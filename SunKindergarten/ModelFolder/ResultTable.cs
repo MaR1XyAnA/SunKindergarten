@@ -15,10 +15,11 @@ namespace SunKindergarten.ModelFolder
     public partial class ResultTable
     {
         public int PersonalNumberResult { get; set; }
-        public int PersonalNumberChildrenResult { get; set; }
         public string PersonalNameEvent { get; set; }
         public System.DateTime DataEventResult { get; set; }
         public string PersonalNameEvaluation { get; set; }
+        public string SurnamesChildrenResult { get; set; }
+        public string NameChildrenResult { get; set; }
     
         public virtual ChildrenTable ChildrenTable { get; set; }
         public virtual EvaluationTables EvaluationTables { get; set; }

@@ -126,7 +126,9 @@ namespace SunKindergarten.ViewFolder.PageFolder
                     {
                         PersonalNameEvent = NameEventstring,
                         DataEventResult = thisDay,
-                        PersonalNameEvaluation = "NEW"
+                        PersonalNameEvaluation = "NEW",
+                        SurnamesChildrenResult = SurnamesChildrenstring,
+                        NameChildrenResult = NamesChildrenstring
                     };
                     AppConnectModelClass.DataBase.ChildrenTable.Add(childrenTable);
                     AppConnectModelClass.DataBase.ResultTable.Add(resultTable);
